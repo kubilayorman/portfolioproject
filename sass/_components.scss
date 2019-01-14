@@ -1,0 +1,335 @@
+////////////////////////////
+/// SITE SLOGAN
+
+.slogan {
+    width: auto;
+    margin-bottom: 2rem;
+    display: inline-block;
+
+    &__link,
+    &__link:visited,
+    &__link:link {
+        text-decoration: none;
+        color: black;
+    }
+
+    &__text1, &__text2 {
+        font-size: 2.2rem;
+        
+        span { 
+            font-weight: 700;
+        }
+    }
+
+    &__text2 {
+        font-size: 1.4rem;
+    }
+
+}
+
+
+////////////////////////////
+/// USER NAVIGATION
+
+.user-nav {
+    display: flex;
+    align-self: stretch;
+    
+    &__list {
+        height: 100%;
+
+        display: flex;
+    }
+
+    &__item {
+        list-style: none;
+        transition: all .3s;
+    }
+
+    &__link,
+    &__link:visited,
+    &__link:link {
+        text-decoration: none;
+        color: black;
+        font-size: 2rem;
+        padding: 2rem;
+        font-weight: 400;  
+        border-bottom: 3px solid transparent;
+        backface-visibility: hidden;
+        background-color: white;
+        transition: all .3s;
+       
+        &:hover {
+            border-bottom: 3px solid black;
+        }
+
+        &:hover > .user-nav__item {
+            transform: translateY(-.7rem);
+        }
+
+        &:active > .user-nav__item {
+            transform: translateY(0rem);
+        }
+
+        &:first-child {
+            padding: 2rem 0;
+        }
+
+        &:last-child {
+            background-color: var(--color-grey-ambient);
+        }
+    }
+}
+
+////////////////////////////
+/// SEARCH BAR
+
+.search {
+    flex: 0 0  40%;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+
+    &__input {
+        font-size: 1.6rem;
+        color: var(--color-grey-dark);
+        border: 1px solid var(--color-grey-ambient);
+        outline: none;
+        background-color: white;
+        padding: 1rem;
+        padding-left: 2rem;
+        border-radius: 50px;
+        width: 50%;
+        transition: all .3s .2s;
+
+        &:focus {
+            width: 70%;
+        }
+    }
+
+    &__button {
+        position: absolute;
+        top: .9rem;
+        right: 2rem;
+        background-color: transparent;
+        border: none;
+        margin-right: 0rem;
+    }
+
+    &__icon {
+        height: 2.25rem;
+        width: 2.25rem;
+        fill: rgba($color: #000000, $alpha: .5);
+        transition: all .3s;
+    }
+
+    &__input:focus + &__button > &__icon {
+       fill: rgba($color: #000000, $alpha: .0)
+    }
+}
+
+////////////////////////////
+/// POST - FRONT PAGE
+
+.post_container {
+    flex: 0 0 33.33%; 
+    text-decoration: none;
+    color: black;
+}
+
+.post {
+    padding: 1rem;
+    overflow: hidden;
+    
+    &__text {
+        border-bottom: .3rem solid transparent;
+        transition: all .3s;
+        padding-bottom: 2rem;
+    }
+
+    &__figure {
+        margin-bottom: 1rem;
+        transition: all .3s;
+        overflow: hidden;
+        backface-visibility: hidden;
+    }
+
+    &__image {
+        max-width: 100%;
+        display: block;
+        transition: all .3s;
+        backface-visibility: hidden;
+    }
+
+    &__title{
+        font-size: 2.3rem;
+        line-height: 1;
+    }
+
+    &__date,
+    &__summary {
+        line-height: 1.6;
+    }
+
+    &__date {
+        padding: 1rem 0 0 0;
+        font-size: 1.3rem;
+    }
+
+    &__summary {
+        font-size: 1.6rem;
+    }
+
+    &:hover > &__text {
+        border-bottom: .3rem solid black;    
+    }
+
+    &:hover > &__figure > &__image {
+        transform: scale(1.1);
+    }
+}
+
+////////////////////////////
+/// FOOTER TEXT
+
+.footer {
+
+    &__container {
+        width: 100%;
+        margin: auto;
+        padding: 4rem 0;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    &__about {
+        flex: 0 0 50%;
+        
+        
+    }
+
+    &__text {
+        font-size: 1.6rem;
+        color: var(--color-grey-dark);
+    }
+
+    &__list {
+        flex: 1;    
+        list-style: none;
+
+        display: flex;
+        justify-content: center;
+    }
+
+    &__item {
+        padding: .5rem;
+
+        a,
+        a:visited,
+        a:link {
+            text-decoration: none;
+            color: var(--color-grey-dark);
+            font-size: 1.6rem;
+            padding-right: 6rem;
+        }
+    }
+}
+
+////////////////////////////
+/// ABOUT PAGE
+
+
+.about {
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        font-size: 1.8rem;
+    }
+
+    &__text {
+
+        &-more,
+        &-more:visited,
+        &-more:link {
+            position: relative;
+            text-decoration: none;
+            color: black;
+            padding: .5rem 0;
+            display: inline-block;
+            transition: all .2s;
+
+            &::before {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                height: 5%;
+                width: 100%;
+                transform: translateX(-50%);
+                background-color: var(--color-grey-ambient);
+                transition: all .2s;
+            }
+
+            &:hover {
+                background-color: black;
+                border-radius: 50px;
+                padding: 0.5rem 1.5rem;
+                color: white;
+                transform: translateX(.5rem);
+            }
+
+            &:hover::before {
+                width: 0%;             
+            } 
+        }
+    }
+
+    &__row {
+        margin-bottom: 2rem;
+
+        &-headtitle {
+            font-size: 2.6rem;
+            font-weight: 700;
+        }
+
+        &-subtitle {
+            font-size: 2.2rem;
+        }
+    }
+
+    &__col {
+        display: flex;
+        flex-direction: row;
+
+        & > * {
+            padding: 0 2rem 0 0;
+        }
+
+        &-left {
+            flex: 0 0 50%;
+            margin-right: auto;
+        }
+
+        &-right {
+            flex: 0 0 50%;
+        }
+
+        &-list {
+            list-style: none;
+            margin-top: 2rem;
+        }
+
+        &-item {
+            padding-bottom: 2rem;
+            font-size: 1.8rem;
+        }
+
+        &-listtext {
+            font-size: 1.6rem;
+            padding-top: 1rem;
+        }
+    }
+}
+
