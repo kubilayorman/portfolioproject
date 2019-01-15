@@ -180,19 +180,38 @@ body {
     font-size: 1.6rem;
     padding-right: 6rem; }
 
-.about__container {
+.about__container-flex,
+.services__container-flex {
+  display: flex;
+  justify-content: space-between; }
+
+.about__container,
+.services__container {
   display: flex;
   flex-direction: column;
   font-size: 1.8rem; }
+  .about__container-left,
+  .services__container-left {
+    flex: 0 0 49%;
+    padding-right: 0rem; }
+  .about__container-right,
+  .services__container-right {
+    flex: 0 0 49%; }
 
-.about__text-more, .about__text-more:visited, .about__text-more:link {
+.about__text-more, .about__text-more:visited, .about__text-more:link,
+.services__text-more,
+.services__text-more:visited,
+.services__text-more:link {
   position: relative;
   text-decoration: none;
   color: black;
   padding: .5rem 0;
   display: inline-block;
   transition: all .2s; }
-  .about__text-more::before, .about__text-more:visited::before, .about__text-more:link::before {
+  .about__text-more::before, .about__text-more:visited::before, .about__text-more:link::before,
+  .services__text-more::before,
+  .services__text-more:visited::before,
+  .services__text-more:link::before {
     content: "";
     position: absolute;
     bottom: 0;
@@ -202,42 +221,92 @@ body {
     transform: translateX(-50%);
     background-color: var(--color-grey-ambient);
     transition: all .2s; }
-  .about__text-more:hover, .about__text-more:visited:hover, .about__text-more:link:hover {
+  .about__text-more:hover, .about__text-more:visited:hover, .about__text-more:link:hover,
+  .services__text-more:hover,
+  .services__text-more:visited:hover,
+  .services__text-more:link:hover {
     background-color: black;
     border-radius: 50px;
     padding: 0.5rem 1.5rem;
     color: white;
     transform: translateX(0.5rem); }
-  .about__text-more:hover::before, .about__text-more:visited:hover::before, .about__text-more:link:hover::before {
+  .about__text-more:hover::before, .about__text-more:visited:hover::before, .about__text-more:link:hover::before,
+  .services__text-more:hover::before,
+  .services__text-more:visited:hover::before,
+  .services__text-more:link:hover::before {
     width: 0%; }
 
-.about__row {
+.about__row, .about__col,
+.services__row,
+.services__col {
   margin-bottom: 2rem; }
-  .about__row-headtitle {
-    font-size: 2.6rem;
-    font-weight: 700; }
-  .about__row-subtitle {
-    font-size: 2.2rem; }
+  .about__row-item, .about__col-item,
+  .services__row-item,
+  .services__col-item {
+    margin-bottom: 2rem;
+    font-size: 1.8rem; }
+  .about__row-listtext, .about__col-listtext,
+  .services__row-listtext,
+  .services__col-listtext {
+    font-size: 1.6rem;
+    margin-top: 1rem; }
 
-.about__col {
-  display: flex;
-  flex-direction: row; }
-  .about__col > * {
-    padding: 0 2rem 0 0; }
-  .about__col-left {
-    flex: 0 0 50%;
-    margin-right: auto; }
-  .about__col-right {
-    flex: 0 0 50%; }
-  .about__col-list {
+.about__headtitle,
+.services__headtitle {
+  font-size: 2.6rem;
+  font-weight: 700; }
+
+.about__subtitle,
+.services__subtitle {
+  font-size: 2.2rem; }
+
+.about__col,
+.services__col {
+  display: flex; }
+  .about__col-list,
+  .services__col-list {
     list-style: none;
     margin-top: 2rem; }
-  .about__col-item {
-    padding-bottom: 2rem;
-    font-size: 1.8rem; }
-  .about__col-listtext {
+  .about__col-listtext,
+  .services__col-listtext {
     font-size: 1.6rem;
-    padding-top: 1rem; }
+    margin-top: 1rem; }
+
+.about__row-container,
+.services__row-container {
+  display: flex;
+  min-height: auto; }
+
+.about__row-left,
+.services__row-left {
+  flex: 0 0 50%; }
+
+.about__row-right,
+.services__row-right {
+  flex: 0 0 50%; }
+
+.about__row-right, .about__row-left,
+.services__row-right,
+.services__row-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+.about__row-list,
+.services__row-list {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 2rem; }
+  .about__row-list:last-child,
+  .services__row-list:last-child {
+    justify-content: flex-start; }
+
+.about__row-item,
+.services__row-item {
+  flex: 0 0 49%;
+  margin-right: 1rem;
+  list-style: none; }
 
 .container {
   max-width: 120rem;
@@ -272,3 +341,6 @@ body {
 
 .bold-span {
   font-weight: 700; }
+
+.filler__small {
+  padding: 1rem; }
