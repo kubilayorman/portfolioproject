@@ -66,13 +66,13 @@ switch ($page) {
 
 ?>
 
-<?php include_once  "includes/meta.php"; // first?>
-<?php include_once  "includes/body.php"; // second?>
+<?php include_once  "includes/meta.php"; // first ?>
+<?php include_once  "includes/body.php"; // second ?>
 <?php include_once  "includes/header.php"; // third ?>
 
 <?php include_once  "$pages_directory/$requested_page"; //fourth ?>
 
-<?php include_once  "includes/footer.php"; // fifth?>
+<?php include_once  "includes/footer.php"; // fifth ?>
 
     
     
