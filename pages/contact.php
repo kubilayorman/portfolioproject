@@ -6,10 +6,22 @@
     <div class="contact-container">
 
         <form action="" class="contact-container__form">
+            
+            <div class="contact-container__name">
+                <input type="text" class="contact-container__name--input" id="name" placeholder="Name">
+                <label for="name">Name</label>
+            </div>
 
-            <input type="text" class="contact-container__name" placeholder="Your Name">
-            <input type="email" class="contact-container__mail" placeholder="Your E-mail">
-            <input type="tel" class="contact-container__phone" placeholder="Your number">
+            <div class="contact-container__mail">
+                <input type="email" class="contact-container__mail--input" id="mail" placeholder="Mail">
+                <label for="mail">Mail</label>
+            </div>
+
+            <div class="contact-container__phone">
+                <input type="tel" class="contact-container__phone--input" id="number" placeholder="Phone">
+                <label for="phone">Phone</label>
+            </div>
+
             <textarea name="messagebox" class="contact-container__messagebox" placeholder="Your message"></textarea>
             <button class="contact-container__submit">Send!</button>
 
