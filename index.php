@@ -37,7 +37,12 @@ switch ($page) {
         $requested_page         = "$page.php";
         $requested_page_title   = "Portfolio Page";
         break;
-
+    
+    case 'process':
+        $requested_page         = "$page.php";
+        $requested_page_title   = "The Process Page";
+        break;
+    
     case 'services':
         $requested_page         = "$page.php";
         $requested_page_title   = "Services Page";
@@ -57,6 +62,12 @@ switch ($page) {
         $requested_page         = "$page.php";
         $requested_page_title   = "The Post Page";
         break;
+
+    case 'the_portfolio':
+        $requested_page         = "$page.php";
+        $requested_page_title   = "The Portfolio Page";
+        break;
+    
     
     default:
         $requested_page         = "pagenotfound.php";

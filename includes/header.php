@@ -9,12 +9,13 @@
     <nav class="user-nav">
 
         <ul class="user-nav__list">
-        <a href="?page=about"     class="user-nav__link"><li class="user-nav__item">Kubilay Orman</li></a>
-        <a href="?page=posts"     class="user-nav__link"><li class="user-nav__item">Posts</li></a>
-        <a href="?page=portfolio" class="user-nav__link"><li class="user-nav__item">Portfolio</li></a>
-        <a href="?page=services"  class="user-nav__link"><li class="user-nav__item">Services</li></a>
-        <a href="?page=contact"   class="user-nav__link"><li class="user-nav__item">Contact</li></a>
-        <a href="?page=login"     class="user-nav__link"><li class="user-nav__item">Login</li></a>
+            <a href="?page=about"     class="user-nav__link"><li class="user-nav__item">Kubilay Orman</li></a>
+            <a href="?page=posts"     class="user-nav__link"><li class="user-nav__item">Posts</li></a>
+            <a href="?page=portfolio" class="user-nav__link"><li class="user-nav__item">Portfolio</li></a>
+            <a href="?page=services"  class="user-nav__link"><li class="user-nav__item">Services</li></a>
+            <a href="?page=process"   class="user-nav__link"><li class="user-nav__item">Process</li></a>
+            <a href="?page=contact"   class="user-nav__link"><li class="user-nav__item">Contact</li></a>
+            <a href="?page=login"     class="user-nav__link"><li class="user-nav__item">Login</li></a>
         </ul>
 
     </nav>

@@ -3,7 +3,6 @@
     <?php 
     // the below variable postnumber will be the number of the post in the database.
     // when you click on the link to the full post then that postnumber will be used to fetch the full post
-
     ?>
 
     <div class="content">
@@ -19,7 +18,6 @@
                 </div>
             </div>
         </a>
-
     </div>
 
 </main>

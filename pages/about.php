@@ -1,13 +1,11 @@
 <main class="main">
 
+    <p class="about__headtitle">Since you're here, I take it you're looking for a developer?</p>
+    <p class="about__subtitle">If so, I can help you with your next project.</p>
+
     <div class="content">
 
         <div href="" class="about__container">
-
-            <div class="about__row">
-                <p class="about__headtitle">Since you're here, I take it you're looking for a developer?</p>
-                <p class="about__subtitle">If so, I can help you with your next project.</p>
-            </div>
 
             <div class="about__row-container">
 
@@ -15,7 +13,7 @@
                     <p class="about__text">I can help you design, build and operate your next web application.
                     Depending on your needs I can also assist with developing your business model.</p>
                     <div class="filler__small"></div>
-                    <p class="about__text about__row-left-text">Have a project you'd like to dicsuss? <a href="#" class="about__text-more"> Let's talk! </a></p>
+                    <p class="about__text about__row-left-text">Have a project you'd like to dicsuss? <a href=<?php echo "'?page=contact'" ?>  class="about__text-more"> Let's talk! </a></p>
                 </div>
 
                 <div class="about__row-right">

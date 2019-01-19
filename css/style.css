@@ -1,9 +1,9 @@
 :root {
-  --color-blue: #030169;
+  --color-blue: #2d2ae2;
   --color-blue-light: rgb(75, 92, 243);
   --color-blue-dark: rgb(9, 1, 58);
-  --color-grey-light: #fcfcfcc7;
-  --color-grey-ambient: rgba(204, 204, 204, 0.493);
+  --color-grey-light: #f0f0f0;
+  --color-grey-ambient: rgba(54, 54, 54, 0.048);
   --color-grey-dark: #333;
   --shadow-dark: 0 0rem 6rem rgba(0, 0, 0, .3); }
 
@@ -25,6 +25,8 @@ h1, h2, h3, p {
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
+  html a, html button, html input[type="submit"] {
+    cursor: pointer; }
 
 body {
   background-color: transparent;
@@ -55,22 +57,18 @@ body {
 
 .user-nav {
   display: flex;
-  align-self: stretch; }
+  margin-right: auto; }
   .user-nav__list {
-    height: 100%;
     display: flex; }
-  .user-nav__item {
-    list-style: none;
-    transition: all .3s; }
   .user-nav__link, .user-nav__link:visited, .user-nav__link:link {
     text-decoration: none;
     color: black;
     font-size: 2rem;
-    padding: 2rem;
+    padding: 1.5rem;
     font-weight: 400;
     border-bottom: 3px solid transparent;
     backface-visibility: hidden;
-    background-color: white;
+    background-color: var(--color-grey-ambient);
     transition: all .3s; }
     .user-nav__link:hover, .user-nav__link:visited:hover, .user-nav__link:link:hover {
       border-bottom: 3px solid black; }
@@ -79,12 +77,16 @@ body {
     .user-nav__link:active > .user-nav__item, .user-nav__link:visited:active > .user-nav__item, .user-nav__link:link:active > .user-nav__item {
       transform: translateY(0rem); }
     .user-nav__link:first-child, .user-nav__link:visited:first-child, .user-nav__link:link:first-child {
-      padding: 2rem 0; }
+      padding: 1.5rem 0; }
     .user-nav__link:last-child, .user-nav__link:visited:last-child, .user-nav__link:link:last-child {
-      background-color: var(--color-grey-ambient); }
+      color: white;
+      background-color: var(--color-blue); }
+  .user-nav__item {
+    list-style: none;
+    transition: all .3s; }
 
 .search {
-  flex: 0 0  40%;
+  flex: 0 0 30%;
   display: flex;
   justify-content: flex-end;
   position: relative; }
@@ -97,10 +99,10 @@ body {
     padding: 1rem;
     padding-left: 2rem;
     border-radius: 50px;
-    width: 50%;
+    width: 80%;
     transition: all .3s .2s; }
     .search__input:focus {
-      width: 70%; }
+      width: 100%; }
   .search__button {
     position: absolute;
     top: .9rem;
@@ -151,6 +153,43 @@ body {
   .post:hover > .post__text {
     border-bottom: .3rem solid black; }
   .post:hover > .post__figure > .post__image {
+    transform: scale(1.1); }
+
+.portfolio_container {
+  flex: 0 0 33.33%;
+  text-decoration: none;
+  color: black; }
+
+.portfolio {
+  padding: 1rem;
+  overflow: hidden; }
+  .portfolio__text {
+    border-bottom: .3rem solid transparent;
+    transition: all .3s;
+    padding-bottom: 2rem; }
+  .portfolio__figure {
+    margin-bottom: 1rem;
+    transition: all .3s;
+    overflow: hidden;
+    backface-visibility: hidden; }
+  .portfolio__image {
+    max-width: 100%;
+    display: block;
+    transition: all .3s;
+    backface-visibility: hidden; }
+  .portfolio__title {
+    font-size: 2.3rem;
+    line-height: 1; }
+  .portfolio__date, .portfolio__summary {
+    line-height: 1.6; }
+  .portfolio__date {
+    padding: 1rem 0 0 0;
+    font-size: 1.3rem; }
+  .portfolio__summary {
+    font-size: 1.6rem; }
+  .portfolio:hover > .portfolio__text {
+    border-bottom: .3rem solid black; }
+  .portfolio:hover > .portfolio__figure > .portfolio__image {
     transform: scale(1.1); }
 
 .footer__container {
@@ -314,7 +353,8 @@ body {
 
 .contact-headline {
   font-size: 2.6rem;
-  width: 100%; }
+  width: 100%;
+  display: block; }
 
 .contact-container {
   flex: 1;
@@ -414,14 +454,15 @@ body {
   background-color: white;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   border-top: 0.1rem solid rgba(0, 0, 0, 0.5);
   border-bottom: 0.1rem solid rgba(0, 0, 0, 0.5); }
 
+.main {
+  padding: 2rem; }
+
 .content {
   margin-top: 2rem;
-  padding: 3rem;
-  background: white;
+  padding: 0rem;
   display: flex;
   justify-content: space-evenly;
   align-items: flex-start;

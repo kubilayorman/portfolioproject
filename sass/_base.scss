@@ -1,10 +1,10 @@
 :root {
-    --color-blue: #030169;
+    --color-blue: #2d2ae2;
     --color-blue-light: rgb(75, 92, 243);
     --color-blue-dark: rgb(9, 1, 58);
 
-    --color-grey-light: #fcfcfcc7;
-    --color-grey-ambient: rgba(204, 204, 204, 0.493);
+    --color-grey-light: #f0f0f0;
+    --color-grey-ambient: rgba(54, 54, 54, 0.048);
     --color-grey-dark: #333;
 
     --shadow-dark: 0 0rem 6rem rgba(0, 0, 0, .3);
@@ -38,6 +38,10 @@ h1, h2, h3, p {
 html {
     box-sizing: border-box;
     font-size: 62.5%;
+    
+     a, button, input[type="submit"] {
+         cursor: pointer;
+     }
 }
 
 body {
@@ -48,7 +52,6 @@ body {
     line-height: 1.6;
     background-repeat: no-repeat;
     font-family: 'Oxygen', sans-serif;
-
 }
 
 ::placeholder {

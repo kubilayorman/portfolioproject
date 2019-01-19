@@ -8,5 +8,5 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Oxygen:400,700" rel="stylesheet">
 
-    <title>Portfolio Kubilay Orman</title>
+    <title>Portfolio Kubilay Orman</title> <!-- just pull changable data from the database, include it above or in an "inlude" function in index.php before the meta.php -->
 </head>
