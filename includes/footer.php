@@ -6,9 +6,9 @@
         </div>
 
         <ul class="footer__list">
-            <li class="footer__item"><a href="">Github</a></li>
-            <li class="footer__item"><a href="">LinkedIn</a></li>
-            <li class="footer__item"><a href="">Mail</a></li>
+            <li class="footer__item"><a target="_blank" rel="noopener noreferrer" href="https://github.com/kubilayorman">Github</a></li>
+            <li class="footer__item"><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/kubilay-orman-6b1922142/">LinkedIn</a></li>
+            <li class="footer__item"><a href="mailto:kubilay.orman@gmail.com" target="_top">Mail</a></li>
         </ul>
     </div>
 

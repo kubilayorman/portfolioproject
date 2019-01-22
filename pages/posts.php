@@ -6,6 +6,13 @@
     ?>
 
     <div class="content">
+        <div class="content-background">
+            <div class="content-top__head">
+                <p class="content-top__head--headtitle">Welcome! Here you'll find my thoughts about business, design, project management, life and other things.</p>
+                <p class="content-top__head--subtitle">I'll also link to other creators as credit and appretiation.</p>
+            </div>
+        </div>
+
         <a href=<?php echo "'?page=the_post&postnumber='" ?>  class="post_container">
             <div class="post">
                 <figure class="post__figure">

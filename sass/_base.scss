@@ -3,7 +3,7 @@
     --color-blue-light: rgb(59, 209, 255);
     --color-blue-dark: rgb(9, 1, 58);
 
-    --color-grey-light: #f0f0f0;
+    --color-grey-light: #f7f3f3;
     --color-grey-ambient: rgba(54, 54, 54, 0.048);
     --color-grey-dark: #333;
 
@@ -56,6 +56,7 @@ body {
     line-height: 1.6;
     background-repeat: no-repeat;
     font-family: 'Oxygen', sans-serif;
+    margin: 0 2rem;
 }
 
 ::placeholder {

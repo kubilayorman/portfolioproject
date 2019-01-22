@@ -6,12 +6,13 @@
 .header {
     height: auto;
     background-color: white;
+    //position: fixed;
+    //width: 120rem;
+    //z-index: 100;
 
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    
-    border-top: .1rem solid rgba($color: #000000, $alpha: .5);
-    border-bottom: .1rem solid rgba($color: #000000, $alpha: .5);
 }
 
 .main {
