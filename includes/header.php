@@ -9,13 +9,13 @@
     <nav class="user-nav">
 
         <ul class="user-nav__list">
-            <a href="?page=about"     class="user-nav__link"><li class="user-nav__item">Who?</li></a>
-            <a href="?page=services"  class="user-nav__link"><li class="user-nav__item">What?</li></a>
-            <a href="?page=portfolio" class="user-nav__link"><li class="user-nav__item">When?</li></a>
-            <a href="?page=process"   class="user-nav__link"><li class="user-nav__item">How?</li></a>
-            <a href="?page=posts"     class="user-nav__link"><li class="user-nav__item">Insights</li></a>
-            <a href="?page=contact"   class="user-nav__link"><li class="user-nav__item">Contact</li></a>
-            <a href="?page=login"     class="user-nav__link"><li class="user-nav__item">Login</li></a>
+            <li class="user-nav__item"><a href="?page=about"     class="user-nav__link">Who?</a></li>
+            <li class="user-nav__item"><a href="?page=services"  class="user-nav__link">What?</a></li>
+            <li class="user-nav__item"><a href="?page=portfolio" class="user-nav__link">When?</a></li>
+            <li class="user-nav__item"><a href="?page=process"   class="user-nav__link">How?</a></li>
+            <li class="user-nav__item"><a href="?page=posts"     class="user-nav__link">Insights</a></li>
+            <li class="user-nav__item"><a href="?page=contact"   class="user-nav__link">Contact</a></li>
+            <li class="user-nav__item"><a href="?page=login"     class="user-nav__link">Login</a></li>
         </ul>
 
     </nav>

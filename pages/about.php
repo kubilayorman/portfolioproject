@@ -14,15 +14,13 @@
                 <div class="content-middle__aside">
                     <p class="content-middle__aside--text">I can help you design, build and operate your next web application.
                     Depending on your needs I can also assist with developing your business model.</p>
-                    <div class="filler__small"></div>
                     <p class="content-middle__aside--text">Have a project you'd like to dicsuss? <a href=<?php echo "'?page=contact'" ?>  class="A-element__submit"> Let's talk! </a></p>
                 </div>
 
                 <div class="content-middle__aside">
                     <p class="content-middle__aside--text">I understand that you're looking for the best bang for the buck, especially considering this might be a remote project.
-                    That's why I have listed a couple of capabilities of mine at and principles which are important to me.</p>
-                    <div class="filler__small"></div>
-                    <p class="content-middle__aside--text"><a href="#" class="A-element__submit">Click to read more about my capabilities & principles.</a></p>
+                    That's why I have listed a couple of capabilities of mine and principles which are important to me.</p>
+                    <a href="#" class="A-element__submit">Click to read more about my capabilities & principles.</a>
                 </div>
             </div>
         </div>
@@ -63,26 +61,16 @@
 
             <div class="content-bottom__column">
                 <ul class="content-bottom__list">
-                    <li class="content-bottom__list-item">PHP
-                    </li>
-                    <li class="content-bottom__list-item">Javascript
-                    </li>
-                    <li class="content-bottom__list-item">Git & Github
-                    </li>
-                    <li class="content-bottom__list-item">SASS
-                    </li>
-                    <li class="content-bottom__list-item">React
-                    </li>
-                    <li class="content-bottom__list-item">CSS & HTML 5
-                    </li>
-                    <li class="content-bottom__list-item">Responsive Design
-                    </li>
-                    <li class="content-bottom__list-item">SQL
-                    </li>
-                    <li class="content-bottom__list-item">Wordpress
-                    </li>
-                    <li class="content-bottom__list-item">Excel & Powerpoint
-                    </li>
+                    <li class="content-bottom__list-item">PHP</li>
+                    <li class="content-bottom__list-item">Javascript</li>
+                    <li class="content-bottom__list-item">Git & Github</li>
+                    <li class="content-bottom__list-item">SASS</li>
+                    <li class="content-bottom__list-item">React</li>
+                    <li class="content-bottom__list-item">CSS & HTML 5</li>
+                    <li class="content-bottom__list-item">Responsive Design</li>
+                    <li class="content-bottom__list-item">SQL</li>
+                    <li class="content-bottom__list-item">Wordpress</li>
+                    <li class="content-bottom__list-item">Excel & Powerpoint</li>
                 </ul>
             </div>
         </div>

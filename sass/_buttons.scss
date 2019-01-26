@@ -2,8 +2,9 @@
 // A - Element buttons
 
 .A-element {
-    
+
     &__submit {
+        margin-right: auto;
         position: relative;
         font-size: 1.8rem;
         font-weight: 700;
@@ -12,32 +13,9 @@
         padding: .5rem 0;
         display: inline-block;
         transition: all .2s;
+        font-family: 'Oxygen', sans-serif;
         
-
-        &::before {
-            content: "";
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            height: 10%;
-            width: 100%;
-            transform: translateX(-50%);
-            background-color: white;
-            transition: all .2s;
-        }
-           
-       &:hover {
-            background-color: white;
-            border-radius: 5px;
-            padding: 0.5rem 1.5rem;
-            color: black;
-            transform: translateX(.5rem);
-            font-weight: 300;
-       }
-           
-       &:hover::before {
-            width: 0%;             
-       } 
+        @include beforeafter-A;
    }
 }
 
@@ -48,43 +26,18 @@
 .B-element {
 
     &__submit {
-        border: none;
-        background-color: transparent;
         position: relative;
+        font-size: 1.8rem;
+        font-weight: 700;
         color: black;
         padding: .5rem 0;
         transition: all .2s;
-        font-weight: 700;
-        font-size: 1.8rem;
+        border: none;
+        background-color: transparent;
         backface-visibility: hidden;
+        font-family: 'Oxygen', sans-serif;
+        
 
-        &::before {
-            content: "";
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            height: 10%;
-            width: 100%;
-            transform: translateX(-50%);
-            background-color: white;
-            transition: all .2s;
-        }
-           
-       &:hover {
-            background-color: white;
-            border-radius: 5px;
-            padding: 0.5rem 1.5rem;
-            color: black;
-            transform: translateX(.5rem);
-            font-weight: 300;
-       }
-
-       &-login:hover {
-        transform: translateY(.5rem);
-       }
-           
-       &:hover::before {
-            width: 0%;             
-       } 
+        @include beforeafter-B;
     }
 }

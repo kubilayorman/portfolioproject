@@ -19,7 +19,7 @@
                     <div class="content-process__bottom--circle"></div>
                 </div>
                 <p class="content-process__bottom--text">
-                    We start by meeting either at a cafe, office or just through skype depending on where we are the time. The purpose is to get to know each other and what our thoughts and expectations are.
+                    We start by meeting at a cafe, office or just through skype depending on where we are the time. The purpose is to get to know each other and what our thoughts and expectations are.
                 </p>
             </div>
         </div>
