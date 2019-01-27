@@ -4,11 +4,9 @@
   "description": "My project portfolio project",
   "main": "index.js",
   "scripts": {
-    // Development workflow
     "watch:sass": "node-sass sass/main.scss css/style.css -w",
     "devserver": "live-server",
     "start": "npm-run-all --parallel devserver watch:sass",
-    // Build workflow - use when ready to deploy
     "compile:sass": "node-sass sass/main.scss css/style.comp.css",
     "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.comp.css -o css/style.prefix.css",
     "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
@@ -25,10 +23,4 @@
   }
 }
 
-// concat stage, merging icon-font.css file into the main css file is not present
-// though if you use svg files this will not be necessary
-//if you choose to use icon-fonts then you need the dev dependency as below and put the the
-//script between compile:sass and prefic:css
-// "concat:css": "concat -o css/style.concat.css css/icon-font.css css/style.comp.css",
-//"concat": "^1.0.3",
 
