@@ -5,7 +5,7 @@
 if (isset($_GET["page"])) {
     $page = $_GET["page"];
 } else {
-    $page = "posts";
+    $page = "insights";
 }
 
 //Validate incoming data from GET - make sure its a string
@@ -28,14 +28,14 @@ switch ($page) {
         $requested_page_title   = "About Page";
         break;
 
-    case 'posts':
+    case 'insights':
         $requested_page         = "$page.php";
-        $requested_page_title   = "Posts Page";
+        $requested_page_title   = "Insights Page";
         break;
 
-    case 'portfolio':
+    case 'cases':
         $requested_page         = "$page.php";
-        $requested_page_title   = "Portfolio Page";
+        $requested_page_title   = "Cases Page";
         break;
     
     case 'process':
@@ -58,14 +58,14 @@ switch ($page) {
         $requested_page_title   = "Login Page";
         break;
 
-    case 'the_post':
+    case 'the_insight':
         $requested_page         = "$page.php";
-        $requested_page_title   = "The Post Page";
+        $requested_page_title   = "The Insight Page";
         break;
 
-    case 'the_portfolio':
+    case 'the_case':
         $requested_page         = "$page.php";
-        $requested_page_title   = "The Portfolio Page";
+        $requested_page_title   = "The Case Page";
         break;
     
     

@@ -2,8 +2,11 @@
     margin: 0;
 }
 
+///////////////////////////
+/// Admin navbar
+
 .admin-navbar {
-    background-color:  #ffd000;
+    background-color:  var(--color-yellow);
     font-size: 1.8rem;
 
     &__menu {
@@ -16,7 +19,8 @@
 
         &--item {
             
-            &:hover > a {
+            &:hover > a,
+            &:hover > p {
                 transform: translateY(.5rem);
                 color: white;
             }
@@ -34,6 +38,14 @@
 
         position: relative;
 
+        &--top {  // also see line 19 and 20 for styling of a tags an p tag within the navbar
+            pointer-events: none;
+            font-weight: 700;
+            display: inline-block;
+            position: relative;
+            transition: all .2s;
+        }
+
         &--menu {
             margin-top: 0rem;
             background-color: white;
@@ -43,7 +55,6 @@
             position: absolute;
             list-style: none;
             backface-visibility: hidden;
-            transition: all .1s;
         }
 
         &--link,
@@ -53,7 +64,7 @@
                 width: 30rem;
                 display: block;
                 text-decoration: none;
-                transition: all .3s;
+                transition: all .1s;
                 color: black;
 
                 &:hover {
@@ -72,3 +83,101 @@
     padding: .1rem;
     background-color: var(--color-grey-ambient);
 }
+
+
+/////////////////////////
+/// Admin Table design
+
+.table {
+    padding: 1rem;
+    width: 100%;
+    font-size: 1.6rem;
+    border-collapse: collapse;
+
+    &__row {
+        width: 100%;
+        margin: 0 .5rem;
+        text-align: left;
+
+        &--header {
+            font-weight: 700;
+            background-color: var(--color-grey-ambient);   
+        }
+    }
+
+    &__cell {
+        padding: 2rem;
+        margin: .1rem;
+        border-bottom: 1px solid var(--color-yellow);
+    }
+
+    &__title {
+        width: calc(100%/6);
+    }
+
+    &__keywords,
+    &__keywords:link,
+    &__keywords:visited {
+        display: inline-block;
+        color: white;
+        font-weight: 700;
+        padding: .5rem;
+        background-color: rgb(40, 210, 253);
+        border-radius: .5rem;
+        margin: .1rem;
+        text-decoration: none;
+    }
+
+    &__menubtn,
+    &__menunbtn:link,
+    &__menubtn:visited{
+        text-decoration: none;
+        color: black;
+        font-size: 2.5rem;
+        text-align: center;
+        backface-visibility: hidden;
+        padding: .5rem;
+        background-color: var(--color-yellow);
+        border-radius: 5px;
+        transition: all .2s;
+        position: relative;
+        display: block;
+
+        &:hover {
+            transform: translateY(-.5rem);
+            box-shadow: 0rem 0rem 1rem 0rem rgba(0,0,0, 0.1);
+        }
+
+        &:active {
+            transform: translateY(0rem);
+            box-shadow: none;
+        }
+    }
+}
+
+#delete {
+    background-color: red;
+    color: white;
+}
+
+
+///////////////////////////
+/// Create insight page
+
+
+
+
+///////////////////////////
+/// Add case page
+
+
+///////////////////////////
+/// General settings page
+
+
+///////////////////////////
+/// Accounts page
+
+
+///////////////////////////
+/// Logout page

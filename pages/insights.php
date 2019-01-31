@@ -13,7 +13,7 @@
             </div>
         </div>
 
-        <a href=<?php echo "'?page=the_post&postnumber='" ?>  class="post_container">
+        <a href=<?php echo "'?page=the_insight&insightnumber='" ?>  class="post_container">
             <div class="post">
                 <figure class="post__figure">
                     <img src="img/moose.jpg" alt="" class="post__image">

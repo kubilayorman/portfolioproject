@@ -14,7 +14,7 @@
             </div>
         </div>
   
-        <a href=<?php echo "'?page=the_portfolio&portfolionumber='" ?>  class="portfolio_container">
+        <a href=<?php echo "'?page=the_case&casenumber='" ?>  class="portfolio_container">
             <div class="portfolio">
                 <figure class="portfolio__figure">
                     <img src="img/moose.jpg" alt="" class="portfolio__image">

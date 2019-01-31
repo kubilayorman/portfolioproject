@@ -11,9 +11,9 @@
         <ul class="user-nav__list">
             <li class="user-nav__item"><a href="?page=about"     class="user-nav__link">Who?</a></li>
             <li class="user-nav__item"><a href="?page=services"  class="user-nav__link">What?</a></li>
-            <li class="user-nav__item"><a href="?page=portfolio" class="user-nav__link">When?</a></li>
+            <li class="user-nav__item"><a href="?page=cases" class="user-nav__link">When?</a></li>
             <li class="user-nav__item"><a href="?page=process"   class="user-nav__link">How?</a></li>
-            <li class="user-nav__item"><a href="?page=posts"     class="user-nav__link">Insights</a></li>
+            <li class="user-nav__item"><a href="?page=insights"     class="user-nav__link">Insights</a></li>
             <li class="user-nav__item"><a href="?page=contact"   class="user-nav__link">Contact</a></li>
             <li class="user-nav__item"><a href="?page=login"     class="user-nav__link">Login</a></li>
         </ul>
